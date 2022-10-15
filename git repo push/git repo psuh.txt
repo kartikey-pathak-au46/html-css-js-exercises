@@ -1,0 +1,20 @@
+First create a local repo in your computer
+then drag into vs Code editor
+enter Ctrl + backtik(button)
+type git init (your local repo will linked with github)
+type git add . (your all local repo become tracked from untracked)
+type git commit -m "First commit" => enter
+Now, go to your Git Hub account and then,
+click on new and create a new repo with same name or some new name
+now, goto code and copy HTTP code from github account
+come back to vs code again type Ctrl + backtik(button)
+type "git remote add origin (paste that github repo link)" => enter (it says with which repo you want to remote)
+Now, again enter "git push --set-upstream origin master => enter (now local master branch liked with remote master branch)
+if it asked some user name or password just enter all the details press enter.
+--------------------------ALL DONE--------------------------------------------------
+for test it:
+create a local new repo drag into  vs code editor then press ctrl + backtick(`)
+type git add .(dot)
+again type: git commit -m "first commit" = > enter
+now, type git push (all done)
+go to git hub account and refresh their and check new repo pushed their or not.
