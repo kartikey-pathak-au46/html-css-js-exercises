@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.backtop {
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  padding: 10px;
+}
+footer {
+  background: #21212b;
+  padding: 60px 60px;
+}
+
+.main {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.get h1 {
+  color: white;
+  margin: 25px 0 35px 0;
+  font-size: 25px;
+}
+
+.get p {
+  text-align: center;
+  margin: 10px 0;
+  cursor: pointer;
+  color: #aeaeae;
+  font-size: 19px;
+}
