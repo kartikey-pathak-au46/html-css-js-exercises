@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>background changer</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 20px 100px;
+      }
+      h1 {
+        text-align: center;
+        text-decoration: underline;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+      }
+
+      p {
+        font-size: 20px;
+        text-align: justify;
+      }
+
+      .btn {
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        border: solid grey 2px;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      #white {
+        background-color: white;
+      }
+      #aqua {
+        background-color: aqua;
+      }
+
+      #voilet {
+        background-color: violet;
+      }
+
+      #black {
+        background-color: black;
+      }
+
+      #colorSwitcher {
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="colorSwitcher">
+      <span class="btn" id="aqua" onclick="changeBG('#7fffd4')"></span>
+      <span class="btn" id="voilet" onclick="changeBG('#ce9aff')"></span>
+      <span class="btn" id="black" onclick="changeBG('#000000')"></span>
+      <span class="btn" id="white" onclick="changeBG('#ffffff') "></span>
+    </div>
+    <h1 class="text">About Us</h1>
+    <img
+      src="https://source.unsplash.com/1200x300/?shoping,ecommerce"
+      alt="image"
+    />
+    <p class="text">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid expedita
+      magnam voluptatibus! Impedit dolorem ipsum suscipit eveniet dignissimos
+      at. Quis tempora, saepe enim deleniti, illo eos quibusdam dolores nulla
+      nobis accusantium ex ut beatae aliquid excepturi molestiae atque
+      distinctio fugit voluptatem, aut incidunt officia voluptatibus deserunt
+      ipsa architecto! Fugiat, temporibus?
+    </p>
+
+    <script>
+      function changeBG(color) {
+        document.body.style.backgroundColor = color;
+        let txt = document.getElementsByClassName("text");
+        if (color == "#000000") {
+          for (let elm of txt) {
+            elm.style.color = "white";
+          }
+        } else {
+          for (let elm of txt) {
+            elm.style.color = "black";
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
