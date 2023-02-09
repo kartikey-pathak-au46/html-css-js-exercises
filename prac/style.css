@@ -1,0 +1,17 @@
+.grand-parent{
+    display: flex;
+}
+
+.parent{
+    display: flex;
+    border:1px solid black;
+    height:10vh;
+    width:300px
+
+}
+.child{
+    display: flex;
+    border:2px solid red;
+    justify-content: space-between;
+    align-items: center;
+}
